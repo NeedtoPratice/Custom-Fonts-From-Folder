@@ -1,5 +1,8 @@
 # Custom Fonts From Folder
 
+[English](README.en.md) | 简体中文
+
+
 基于 [nmkj-io/rw-customfonts](https://github.com/nmkj-io/rw-customfonts) 修改的
 RimWorld 字体 mod。
 
