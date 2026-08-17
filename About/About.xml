@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Custom Fonts From Folder</name>
+  <author>NeedtoPratice</author>
+  <packageId>ntp.customfontsfromfolder</packageId>
+  <modVersion>1.0.0</modVersion>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>brrainz.harmony</li>
+  </loadAfter>
+  <description><![CDATA[从本模组根目录的 "fonts" 文件夹读取 .ttf / .otf / .ttc 字体文件，并应用到 RimWorld 的界面文字和世界地图文字。
+Loads .ttf / .otf / .ttc font files from the "fonts" folder in this mod's root directory and applies them to RimWorld's UI and world map text.
+
+使用方法 / Usage:
+1. 把字体文件放入 [本模组文件夹]/fonts
+   Put font files into [This mod folder]/fonts
+2. 安装 Python 依赖 / Install Python dependency:
+   python3 -m pip install --user UnityPy
+3. 在 Mod 根目录运行打包工具 / Run the bundling tool from the mod root:
+   python3 tools/build_font_bundles.py
+   这会为每个字体生成对应的 .fontbundle 文件。
+   This generates a .fontbundle file for every font.
+4. 重启游戏，在 选项 > Mod 设置 > Custom Fonts From Folder 中选择字体。
+   Restart the game and select the font in Options > Mod Settings > Custom Fonts From Folder.
+
+Python 打包工具更多命令 / More bundling-tool commands:
+  python3 tools/build_font_bundles.py --force
+    Force-rebuild all font bundles. 强制重新生成所有 bundle。
+  python3 tools/build_font_bundles.py --clean
+    Remove bundles whose source font file is missing. 清理孤立 bundle。
+  python3 tools/build_font_bundles.py --force --clean
+    Force rebuild and clean at the same time. 同时强制重建并清理。
+
+支持界面字体、世界地图字体、缩放和垂直偏移设置。
+Supports UI font, world map font, scale and vertical offset settings.
+
+字体渲染方案基于 / Font rendering approach based on:
+nmkj-io/rw-customfonts (https://github.com/nmkj-io/rw-customfonts).]]></description>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+  </modDependencies>
+</ModMetaData>
