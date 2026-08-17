@@ -38,7 +38,12 @@ Python 打包工具更多命令 / More bundling-tool commands:
 Supports UI font, world map font, scale and vertical offset settings.
 
 字体渲染方案基于 / Font rendering approach based on:
-nmkj-io/rw-customfonts (https://github.com/nmkj-io/rw-customfonts).]]></description>
+nmkj-io/rw-customfonts (https://github.com/nmkj-io/rw-customfonts).
+
+AI 生成声明 / AI disclosure:
+本 mod 的代码与文案主要由 AI 生成，并在原项目基础上由人工审阅、修改和整理。
+This mod's code and texts were primarily AI-generated, based on the original
+project, with human review and modification.]]></description>
   <modDependencies>
     <li>
       <packageId>brrainz.harmony</packageId>
